@@ -17,7 +17,7 @@ class FormView extends Component {
 
   componentDidMount(){
     $.ajax({
-      url: `https://triviatanwenkai.herokuapp.com/categories`, //TODO: update request URL
+      url: `/categories`, //TODO: update request URL
       type: "GET",
       success: (result) => {
         this.setState({ categories: result.categories })
@@ -34,7 +34,7 @@ class FormView extends Component {
   submitQuestion = (event) => {
     event.preventDefault();
     $.ajax({
-      url: 'https://triviatanwenkai.herokuapp.com/questions/new',
+      url: '/questions/new',
       type: "POST",
       dataType: 'json',
       contentType: 'application/json',
