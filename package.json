@@ -7,6 +7,7 @@
     "node": "v12.18.2"
   },
   "proxy": "https://triviatanwenkai.herokuapp.com",
+  "homepage": "https://triviatanwenkai.herokuapp.com",
   "dependencies": {
     "corsproxy": "^1.5.0",
     "jquery": "^3.4.1",
